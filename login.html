@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #8B0000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      width: 300px;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    .login-container h2 {
+      color: #8B0000;
+      margin-bottom: 1rem;
+    }
+    .login-container label {
+      display: block;
+      color: #8B0000;
+      margin: 0.5rem 0 0.25rem;
+      font-weight: bold;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #8B0000;
+      border-radius: 5px;
+    }
+    .login-container input[type="submit"] {
+      width: 100%;
+      padding: 0.5rem;
+      background-color: yellow;
+      border: none;
+      border-radius: 5px;
+      color: #8B0000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .login-container input[type="submit"]:hover {
+      background-color: #FFD700;
+    }
+    .bl{
+        font-size: 24px;
+        color:#8B0000 ;
+        text-decoration: none;
+        transition: color 0.3s;
+        float: left;
+    }
+    .bl:hover{
+        color: #da0e0e;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <a href="index.html" class="bl">&#8592;</a>
+    <h2>Login</h2>
+    <form action="login.html" method="post">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      
+      <input type="submit" value="Login">
+    </form>
+  </div>
+</body>
+</html>

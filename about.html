@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exotic Tastes, Modern Flair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+
+        body {
+            background-color: #8B0000;
+            color:#FFF8E7;
+    
+        }
+           
+        .logo-small {
+             color: #FFD700;
+             font-size: 1.5rem;
+             text-decoration: none;
+             font-family: 'Amita', cursive;
+    }
+        .navbar {
+        background-color: #8B0000;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            color: #FFD700;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            color: #FFD700;
+        }
+
+        .nav-links a:hover {
+            color: #FFD700; 
+        }
+
+        .nav-links a.active {
+            text-decoration: underline;
+        }
+
+        .auth-section {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .cart-button, .login-button {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .decorative-title {
+            font-size: 3rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .main-title {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .content-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .content-column {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .content-columns {
+                grid-template-columns: 1fr;
+            }
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="decorative-border"></div>
+    <nav class="navbar">
+        <a href="/" class="logo-small">Spice Route</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu1.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="orderonline.html">Order Online</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="auth-section">
+            <a href="login.html" style="color: #FFD700;">Log In</a>
+        </div>
+    </nav>
+
+   
+        
+
+        <div class="auth-section">
+            <a href="login.html" class="login-button">
+                <span>👤</span>
+                Log In
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h2 class="decorative-title">Our Story</h2>
+        <h1 class="main-title">Exotic Tastes, Modern Flair</h1>
+        
+        <div class="content-columns">
+            <div class="content-column">
+                At SpiceRoute, we pride ourselves on using only the freshest ingredients, handpicked spices, and age-old techniques that give each dish a unique character and depth. From our rich, creamy curries and smoky tandoor specials to our flavorful biryanis and crispy street-food favorites, every bite is crafted to take you on a culinary journey through India.
+            </div>
+            <div class="content-column">
+                Our chefs, trained in both traditional and contemporary Indian cooking, bring years of expertise and innovation to every dish. Whether you’re new to Indian food or a long-time fan, our menu has something for everyone, with options that cater to all tastes, preferences, and dietary needs.
+            </div>
+        </div>
+    </section>
+</body>
+</html>

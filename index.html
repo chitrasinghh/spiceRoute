@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Route - Authentic Indian Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .navbar {
+        background-color: #8B0000;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    .logo-small {
+        color: #FFD700;
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-family: 'Amita', cursive;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .nav-links a {
+        color: #FFD700;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: #FFA500;
+    }
+    
+    .auth-section {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        color: #FFD700;
+    }
+    
+    .hero {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .hero-content {
+        background-color: #8B0000;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #FFD700;
+    }
+    
+    .hero-content h1 {
+        font-family: 'Amita', cursive;
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    
+    .hero-content p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        color: #FFA500;
+    }
+    
+    .book-button {
+        background-color: #FFD700;
+        color: #8B0000;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .book-button:hover {
+        background-color: #FFA500;
+        transform: translateY(-3px);
+    }
+    
+    .hero-image {
+        background-image: url('/placeholder.svg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .decorative-border {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 10px;
+        background: repeating-linear-gradient(
+            45deg,
+            #FFD700,
+            #FFD700 10px,
+            #8B0000 10px,
+            #8B0000 20px
+        );
+    }
+    
+    @media (max-width: 768px) {
+        .hero {
+            grid-template-columns: 1fr;
+        }
+    
+        .hero-content {
+            padding: 2rem;
+            text-align: center;
+            align-items: center;
+        }
+    
+        .hero-content h2 {
+            font-size: 2rem;
+        }
+    
+        .hero-image {
+            height: 50vh;
+        }
+    
+        .nav-links {
+            display: none;
+        }
+    }
+    </style>
+    
+       
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="/" class="logo-small">Spice Route</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu1.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="orderonline.html">Order Online</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="auth-section">
+            <a href="login.html" style="color: #FFD700;">Log In</a>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Spice Route</h1>
+            <h2>AUTHENTIC INDIAN CUISINE</h2>
+            <p>Embark on a Culinary Journey Through India</p>
+            <a href="reservation.html" class="book-button">Reserve a Table</a>
+        </div>
+        <div class="hero-image">
+            <img src="download.jpg">
+        </div>
+    </main>
+</body>
+</html>

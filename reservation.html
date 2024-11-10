@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Request</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            margin: 0 auto;
+            
+            background-color: #FFFAF0;
+        }
+        #ope{
+            max-width: 800px;
+            margin-left: 23%;
+            
+        }
+        h1 {
+            color: #8B0000;
+            font-style: italic;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            font-size: 2em;
+        }
+        p {
+            text-align: center;
+            color: #666;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #8B0000;
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #FFD700;
+            border-radius: 4px;
+            background-color: #FFF;
+            color: #333;
+        }
+        .time-slots {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+        }
+        .time-slot {
+            padding: 10px;
+            text-align: center;
+            background-color: #FFD700;
+            border: none;
+            cursor: pointer;
+            color: #8B0000;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .time-slot:hover, .time-slot.selected {
+            background-color: #8B0000;
+            color: #FFD700;
+        }
+        .submit-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #8B0000;
+            color: #FFD700;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #660000;
+        }
+        .navbar {
+        background-color: #8B0000;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    .logo-small {
+        color: #FFD700;
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-family: 'Amita', cursive;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .nav-links a {
+        color: #FFD700;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: #FFA500;
+    }
+    
+    .auth-section {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        color: #FFD700;
+    }
+    
+    .hero {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .hero-content {
+        background-color: #8B0000;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #FFD700;
+    }
+    </style>
+</head>
+<body>
+  <div class="decorative-border"></div>
+    <nav class="navbar">
+        <a href="index.html" style="" class="logo-small">Spice Route</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu1.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="orderonline.html">Order Online</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="auth-section">
+            <a href="login.html" style="color: #FFD700;">Log In</a>
+        </div>
+    </nav>
+    <div id="ope"><h1>Request</h1>
+    <h2>a reservation</h2>
+    <p >Enter your details and we'll try to get the best table for you</p>
+
+    <form id="reservation-form">
+        <div class="form-group">
+            <label for="party-size">Party size</label>
+            <select id="party-size" name="party-size" required>
+                <option value="">Select number of guests</option>
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+                <option value="7">7 guests</option>
+                <option value="8">8 guests</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="text" id="date" name="date" placeholder="MM/DD/YYYY" required>
+        </div>
+
+       
+
+        <div class="form-group">
+            <label>Choose an available time slot:</label>
+            <div class="time-slots">
+                <button type="button" class="time-slot">3:15 PM</button>
+                <button type="button" class="time-slot">3:30 PM</button>
+                <button type="button" class="time-slot">3:45 PM</button>
+                <button type="button" class="time-slot">4:00 PM</button>
+                <button type="button" class="time-slot">4:15 PM</button>
+                <button type="button" class="time-slot">4:30 PM</button>
+                <button type="button" class="time-slot">4:45 PM</button>
+                <button type="button" class="time-slot selected">5:00 PM</button>
+                <button type="button" class="time-slot">5:15 PM</button>
+                <button type="button" class="time-slot">5:30 PM</button>
+                <button type="button" class="time-slot">5:45 PM</button>
+                <button type="button" class="time-slot">6:00 PM</button>
+                <button type="button" class="time-slot">6:15 PM</button>
+                <button type="button" class="time-slot">6:30 PM</button>
+                <button type="button" class="time-slot">6:45 PM</button>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Find a table</button>
+    </form>
+</div>
+
+    <script>
+        document.querySelectorAll('.time-slot').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.time-slot').forEach(btn => btn.classList.remove('selected'));
+                this.classList.add('selected');
+                document.getElementById('time').value = this.textContent;
+            });
+        });
+
+        document.getElementById('reservation-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Reservation request submitted!');
+        });
+    </script>
+</body>
+</html>

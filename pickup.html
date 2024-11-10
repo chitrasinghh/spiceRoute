@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Selection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .close-button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .delivery-options {
+            display: flex;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .delivery-option {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .delivery-option.active {
+            background-color: #8B0000;
+            color: yellow;
+        }
+
+        .pickup-details {
+            margin-bottom: 20px;
+        }
+
+        .location {
+            color: #8B0000;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .radio-group {
+            margin: 15px 0;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .radio-option input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .save-button {
+            background-color: #8B0000;
+            color: yellow;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .save-button:hover {
+            background-color: #660000;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            <h2>Where would you like to receive your order?</h2>
+            <a href="orderonline.html" class="close-button">&times;</a>
+        </div>
+
+        
+
+        <div class="pickup-details">
+            <p>Deliver to:</p>
+            <textarea name="Address"  rows="3" cols="60"></textarea>
+
+            <div>
+                <p>When:</p>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="pickup-time" checked>
+                        <span>up to 30 minutes</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="pickup-time">
+                        <span>Schedule for later</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <button class="save-button">Save</button>
+    </div>
+
+    <script>
+        document.querySelectorAll('.delivery-option').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.delivery-option').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                button.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Route - Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .auth-section {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        color: #FFD700;
+    }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFF8E7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .menu-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .menu-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .menu-title {
+            font-family: 'Amita', cursive;
+            color: #8B0000;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .menu-subtitle {
+            color: #666;
+            font-style: italic;
+        }
+
+        .menu-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            color: #8B0000;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #FFD700;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 0;
+        }
+
+        .item-details {
+            flex: 1;
+        }
+
+        .item-name {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+
+        .item-description {
+            color: #666;
+            font-size: 0.9rem;
+            max-width: 80%;
+        }
+
+        .item-price {
+            font-weight: 600;
+            color: #8B0000;
+            margin-left: 1rem;
+        }
+
+        .menu-note {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 2rem;
+            padding: 1rem;
+            border-top: 1px solid #FFD700;
+        }
+
+        
+
+        @media (max-width: 768px) {
+            .menu-container {
+                padding: 1rem;
+                margin: 1rem;
+            }
+
+            .item-description {
+                max-width: 100%;
+            }
+
+            .menu-item {
+                flex-direction: column;
+            }
+
+            .item-price {
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+            .decorative-border {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 10px;
+        background: repeating-linear-gradient(
+            45deg,
+            #FFD700,
+            #FFD700 10px,
+            #8B0000 10px,
+            #8B0000 20px
+        );
+    }}
+    .navbar {
+        background-color: #8B0000;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    .logo-small {
+        color: #FFD700;
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-family: 'Amita', cursive;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .nav-links a {
+        color: #FFD700;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: #FFA500;
+        }
+    </style>
+
+    <div class="decorative-border"></div>
+    <nav class="navbar">
+        <a href="/" class="logo-small">Spice Route</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu1.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="orderonline.html">Order Online</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="auth-section">
+            <a href="login.html" style="color: #FFD700;">Log In</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="menu">
+    <div class="menu-container">
+        <header class="menu-header">
+            <h1 class="menu-title">Our Menu</h1>
+            <p class="menu-subtitle">A Journey Through Indian Flavors</p>
+        </header>
+
+        <section class="menu-section">
+            <h2 class="section-title">Appetizers (Starters)</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3 class="item-name">Samosa</h3>
+                    <p class="item-description">Crispy pastry filled with spiced potatoes, green peas, and aromatic Indian spices</p><br>
+                    <h3 class="item-name">Lamb Keema Samosa</h3>
+                    <p class="item-description">Spiced minced lamb wrapped in crispy pastry, paired with tangy dipping sauce.</p><br>
+                    <h3 class="item-name">Onion Bhaji</h3>
+                    <p class="item-description"> Onion fritters seasoned with spices and served with tamarind sauce.</p><br>
+                    <h3 class="item-name">Aloo Tikki</h3>
+                    <p class="item-description">Pan-fried potato patties with spices, served with mint and tamarind chutneys.</p><br>
+                    <h3 class="item-name">Paneer Tikka</h3>
+                    <p class="item-description">Grilled cottage cheese marinated in yogurt and traditional spices</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="menu-section">
+            <h2 class="section-title">Soups</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3 class="item-name">Tomato Shorba</h3>
+                    <p class="item-description">Traditional Indian spiced tomato soup.</p><br>
+                    <h3 class="item-name">Mulligatawny Soup</h3>
+                    <p class="item-description">Hearty lentil-based soup with a blend of spices and coconut milk.</p><br>
+                    <h3 class="item-name">Dal Shorba</h3>
+                    <p class="item-description">A comforting, protein-rich soup made from lentils, flavored with cumin, garlic, and Indian spices.</p><br>
+                    <h3 class="item-name">Vegetable Manchow Soup</h3>
+                    <p class="item-description">A spicy Indo-Chinese soup with mixed vegetables, garlic, and crispy fried noodles on top.</p><br>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 class="section-title">Main Course</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3 class="item-name">Butter Chicken</h3>
+                    <p class="item-description">Tender chicken in rich tomato-butter gravy with aromatic spices</p><br>
+                    <h3 class="item-name">Palak Paneer</h3>
+                    <p class="item-description">Fresh spinach curry with homemade cottage cheese and mild spices</p><br>
+                    <h3 class="item-name"> Paneer Butter Masala</h3>
+                    <p class="item-description"> cheese cubes in a rich, creamy tomato gravy.</p><br>
+                    <h3 class="item-name">Chole Bhature</h3>
+                    <p class="item-description">Chickpeas in a spicy curry served with fluffy fried bread.</p><br>
+                    <h3 class= "item-name">Gobi Aloo</h3>
+                    <p class="item-description">Potatoes and cauliflower cooked in a light blend of spices.</p><br>
+                    <h3 class="item-name">Baingan Bharta</h3>
+                    <p class="item-description">Smoked and mashed eggplant in a spiced onion-tomato mix.</p><br>
+                    <h3 class="item-name">Malai Kofta</h3>
+                     <p class="item-description"> cottage cheese dumplings in a creamy sauce.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 class="section-title">Breads</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3 class="item-name">Butter Naan</h3>
+                    <p class="item-description">Traditional Indian bread baked in tandoor and brushed with butter</p><br>
+                    <h3 class="item-name">Garlic Roti</h3>
+                    <p class="item-description">Whole wheat bread topped with fresh garlic and coriander</p><br>
+                    <h3 class="item-name">Tandoori Roti</h3>
+                    <p class="item-description">Whole wheat flatbread baked in a clay oven.</p><br>
+                    <h3 class="item-name">Lachha Paratha</h3>
+                    <p class="item-description">Layered, flaky whole wheat bread.</p><br>
+                    <h3 class="item-name">Stuffed Kulcha(Paneer/Aloo)</h3>
+                    <p class="item-description">Fluffy bread stuffed with spiced potato or cottage cheese.</p><br>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 class="section-title">Desserts</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3 class="item-name">Gulab Jamun</h3>
+                    <p class="item-description">Deep-fried milk dumplings soaked in rose-flavored sugar syrup</p><br>
+                    <h3 class="item-name">Kheer</h3>
+                    <p class="item-description">Traditional rice pudding with cardamom, nuts, and saffron</p><br>
+                    <h3 class="item-name">Ras Malai</h3>
+                    <p class="item-description">Soft cheese patties in a sweetened milk sauce with saffron.</p><br>
+                    <h3 class="item-name">Kulfi</h3>
+                    <p class="item-description">Rich, creamy Indian-style ice cream available in mango or pistachio flavor</p><br>
+                 </div>
+            </div>
+        </section>
+
+
+        <section class="menu-section">
+            <h2 class="section-title">Beverages</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <h3 class="item-name">Masala Chai</h3>
+                     <p class="item-description"> Spiced Indian tea with milk and sugar.</p><br>
+                     <h3 class="item-name"> Lassi / Salted Lassi</h3>
+                     <p class="item-description">Traditional yogurt-based drink, served sweet or salted.</p><br>
+                    <h3 class="item-name"> Mango Lassi</h3>
+                    <p class="item-description"> Yogurt drink with fresh mango puree.</p><br>
+                    <h3 class="item-name"> Fresh Lime Soda</h3>
+                     <p class="item-description"> Refreshing lime drink with the option of sweet or salty.</p><br>
+
+            </div>
+        </section>
+
+        
+    </div>
+    </section>
+    </main>
+</body>
+</html>
